@@ -1,0 +1,12 @@
+[
+	{
+		"id": 3,
+		"event_id": 1,
+		"email": "new_email@gmail.com"
+	},
+	{
+		"id": 4,
+		"event_id": 1,
+		"email": "new_email2@gmail.com"
+	}
+]

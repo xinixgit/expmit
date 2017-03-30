@@ -1,7 +1,7 @@
 var express = require('express');
-var db = {};
-
 var mysql = require('mysql')
+
+var db = {};
 var connection = mysql.createConnection({
 	host     : 'localhost',
 	user     : 'root',
@@ -11,10 +11,10 @@ var connection = mysql.createConnection({
 
 connection.connect();
 
-db.get = function(sql, onSuc, onErr) {	
+db.get = function(sql, onSuc) {	
 	connection.query(sql, function (err, rows, fields) {
   		if (err) {
-	  		onErr(err);
+	  		throw err;
 	  	}
 
 	  	onSuc(rows);
@@ -24,8 +24,8 @@ db.get = function(sql, onSuc, onErr) {
 // Insert a new rsvp and return the newly inserted row id
 db.set = function(sql, onSuc, onErr) {
 	connection.query(sql, function (err, results, fields) {
-			if (err) {
-	  		onErr(err);
+		if (err) {
+	  		throw err;
 	  	}
 
 	  	onSuc(results.insertId);
