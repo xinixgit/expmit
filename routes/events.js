@@ -4,37 +4,36 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/all', function(req, res) {
-	sqlclient.getAllEvents(function(rows){
+	sqlclient.getAllEvents().then(function(rows){
 		res.send(rows);
-	}, function(err){
-		console.err(err);
+	}).catch (function(err) {
+		console.error(err);
+		res.send('Error');
 	});
 });
 
 router.get('/rsvp/:event_id', function(req, res){
 	var event_id = req.params.event_id;
-
-	try {
-		sqlclient.getRsvp4Event(event_id, function(rows){
-			res.send(rows);
-		});
-	} catch (err) {
+	
+	sqlclient.getRsvp4Event(event_id).then(function(rows){
+		res.send(rows);
+	}).catch (function(err) {
 		console.error(err);
-		res.send('ERROR');
-	}
+		res.send('Error');
+	});
 });
 
 router.post('/rsvp', function(req, res) {
 	var event_id = req.body.event_id;
 	var email = req.body.email;
-	sqlclient.setRsvp(event_id, email, function(id){
-		console.log('Insert rsvp with id ' + id + ' successful');
-	}, function(err) {
-		console.err(err);
-		console.log('Insert rsvp with id ' + id + ' failed');
-	});	
-
-	res.send('OK');
+	
+	sqlclient.setRsvp(event_id, email).then(function(id){
+		console.log('Rsvp with id ' + id + ' is inserted.');
+		res.send('Ok');
+	}).catch(function(err) {
+		console.error('Rsvp got err: ' + err);
+		res.send('Error');
+	});
 });
 
 module.exports = router;

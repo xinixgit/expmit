@@ -17,6 +17,7 @@ CREATE TABLE events (
 	instructor_id INT NOT NULL,
 	title VARCHAR(1023) NOT NULL,
 	pic_url VARCHAR(2047) NOT NULL,
+	price FLOAT(10, 2) NOT NULL,
 	description TEXT NOT NULL,
 	location VARCHAR(2047) NOT NULL,
 	time_start TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
@@ -28,13 +29,15 @@ CREATE TABLE events (
 CREATE TABLE rsvp (
 	id INT NOT NULL AUTO_INCREMENT,
 	event_id INT NOT NULL,
-	email VARCHAR(1023),
+	email VARCHAR(255) NOT NULL,
 	PRIMARY KEY(id),
 	FOREIGN KEY (event_id) REFERENCES events(id) ON DELETE CASCADE
 );
 
+CREATE INDEX rsvp_email on rsvp(email);
+
 /* TEST DATA */
 INSERT INTO instructor (name, intro, email) VALUES ('John Smith', 'Me, myself and I', 'instruct_email@hotmail.com');
-INSERT INTO events (instructor_id, title, pic_url, description, location, time_start, time_end) VALUES (1, 'A trip to faraway', '/farawaypic.jpg', 'Lets go somewhere far away', 'There', CURDATE(), DATE(DATE_ADD(CURDATE(), INTERVAL 4 DAY)));
-INSERT INTO events (instructor_id, title, pic_url, description, location, time_start, time_end) VALUES (1, 'A trip to nearby', '/nearbypic.jpg', 'Lets go somewhere nearby', 'Here', CURDATE(), DATE(DATE_ADD(CURDATE(), INTERVAL 1 DAY)));
+INSERT INTO events (instructor_id, title, pic_url, price, description, location, time_start, time_end) VALUES (1, 'A trip to faraway', '/farawaypic.jpg', 30.75,'Lets go somewhere far away', 'There', CURDATE(), DATE(DATE_ADD(CURDATE(), INTERVAL 4 DAY)));
+INSERT INTO events (instructor_id, title, pic_url, price, description, location, time_start, time_end) VALUES (1, 'A trip to nearby', '/nearbypic.jpg', 192.0,'Lets go somewhere nearby', 'Here', CURDATE(), DATE(DATE_ADD(CURDATE(), INTERVAL 1 DAY)));
 INSERT INTO rsvp (event_id, email) VALUES (2, 'hello_kitty@gmail.com'), (2, 'hello_moto@gmail.com');
