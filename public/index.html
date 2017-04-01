@@ -1,0 +1,586 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+</head>
+
+<body class="home page page-id-5 page-template page-template-home-page page-template-home-page-php" data-gr-c-s-loaded="true">
+   <header class="no-padding">
+      <div class="navbar-fixed">
+         <nav class="navfeature">
+            <div class="container nav-wrapper">
+               <a href="https://www.android-kiosk.com" class="waves-effect waves-light">
+               <span class="hide-on-small-only"><img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/brand_white.png" width="30" id="appicon" style="vertical-align: middle;margin-bottom:10px;margin-right:10px;"></span>
+               <span id="header-large" style="font-weight:300;font-size:1.3rem;">Kiosk Browser</span>
+               </a>
+               <ul id="nav-mobile" class="hide-on-med-and-down right">
+                  <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5 current_page_item menu-item-24"><a href="https://www.android-kiosk.com/">App</a></li>
+                  <li id="menu-item-985" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-985"><a href="https://www.kbremote.net/Home/Start">Remote Management</a></li>
+                  <li id="menu-item-1150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1150"><a href="#support">Support</a></li>
+                  <li id="menu-item-1204" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1204"><a href="#contact">Contact</a></li>
+               </ul>
+               <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi mdi-menu"></i></a>
+            </div>
+         </nav>
+      </div>
+      <div class="side-nav-start">
+         <ul id="slide-out" class="side-nav" style="transform: translateX(-100%);">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5 current_page_item menu-item-24"><a href="https://www.android-kiosk.com/">App</a></li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-985"><a href="https://www.kbremote.net/Home/Start">Remote Management</a></li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1150"><a href="#support">Support</a></li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1204"><a href="#contact">Contact</a></li>
+         </ul>
+      </div>
+   </header>
+   <main class="no-padding">
+      <div class="section white no-pad-top">
+         <div class="section light-green darken-1 no-pad-bot z-depth-1 start-splash-section">
+            <div class="container start-splash-container">
+               <div class="row">
+                  <div class="col s12 l6">
+                     <div class="white-text start-splash-header-content">
+                        <span class="start-splash-header-text white-text">Kiosk Browser Lockdown</span>
+                        <h3 class="white-text start-header-paragraph-text">
+                           Create public kiosks, interactive digital signage and more with any Android™ device. Display your web page(s) and prevent access to system settings &amp; other applications.
+                           <p></p>
+                           <a href="https://play.google.com/store/apps/details?id=com.procoit.kioskbrowser&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Get it on Google Play" src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/google-play-badge.png" width="148"></a>
+                           <!--<a class="waves-effect waves-light btn white text-primarycolor" style="margin-bottom:50px;margin-right: 10px;margin-top:0px;" href="http://sites.fastspring.com/androidkiosk/product/kioskbrowserpro"><i class="mdi mdi-credit-card left" ></i>Buy Pro</a>-->
+                           <a class="waves-effect waves-light btn white text-primarycolor modal-trigger" style="margin-bottom:50px;margin-right: 10px;margin-top:0px;" href="#modalBuy" onclick="buySingle()"><i class="mdi mdi-credit-card left"></i>Buy Pro</a>
+                        </h3>
+                     </div>
+                     <!--<p class="center-align">
+                        <a class="waves-effect waves-light btn" href="#screenshots" style="margin-right:10px;margin-bottom: 5px;"><i class="mdi mdi-camera left"></i>Screenshots</a>
+                        
+                        </p>-->
+                  </div>
+                  <div class="col s12 l6">
+                     <div class="splash-image-container">
+                        <img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/splash5.png" class="splash-image">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section white" id="features">
+         <div class="container">
+            <div class="row">
+               <div class="col s12 m6">
+                  <h5 class="start text-primarycolor">Features</h5>
+                  <p class="start-paragraph-text text-primarycolor">We provide a FREE and a PRO version, the free version has a limited number of functions but can be used as a fully functional demo by enabling the demo setting.</p>
+                  <ul class="start-feature-list">
+                     <li>Password <a href="https://kioskbrowser.userecho.com/topic/882871-how-do-i-exit/" target="_blank">protected settings</a> &amp; <a href="https://kioskbrowser.userecho.com/topic/910492-wifi-settings-password/" target="_blank">WiFi settings</a></li>
+                     <li>Lock your device(s) to a single URL</li>
+                     <li>Configure toolbar buttons</li>
+                     <li>Control clearing of cache, cookies, history &amp; web storage</li>
+                     <li>Provide access to additional websites with the <a href="https://kioskbrowser.userecho.com/topics/649-bookmarks-bar/" target="_blank">bookmarks bar</a></li>
+                     <li><a href="https://kioskbrowser.userecho.com/topic/882708-whitelist/" target="_blank">Whitelist</a> &amp; <a href="https://kioskbrowser.userecho.com/topics/901-blacklist/" target="_blank">Blacklist</a> feature to control website access</li>
+                     <li><a href="https://kioskbrowser.userecho.com/topic/921165-scheduled-sleepwake/" target="_blank">Scheduled sleep/wake/app restart</a></li>
+                     <li>Automatic crash recovery</li>
+                  </ul>
+               </div>
+               <div class="col s6 offset-s3 m6 center" style="">
+                  <img class="responsive-img" src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/pro_green_illustration.png">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col s12 m6 center hide-on-small-and-down">
+                  <img class="responsive-img" src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/brand_illustration.png">
+               </div>
+               <div class="col s12 m6">
+                  <h5 class="start text-primarycolor">Customise</h5>
+                  <ul class="start-feature-list">
+                     <li>Choice of <a href="https://kioskbrowser.userecho.com/topic/882681-themes/" target="_blank">10 themes</a></li>
+                     <li>Display your logo in the toolbar</li>
+                     <li>Use your brandname as the app title</li>
+                     <li>Brand the <a href="https://kioskbrowser.userecho.com/topic/905825-custom-error-access-denied-pages/" target=" _blank">error &amp; access denied pages</a></li>
+                     <li>Display an image/video/website <a href="https://kioskbrowser.userecho.com/topic/882581-screensaver/" target="_blank">screensaver</a> whilst the device is idle</li>
+                     <li>Control visibility of toolbar and system bar</li>
+                  </ul>
+                  <p class="start-paragraph-text text-primarycolor">We also offer a branding facility/customisation service.</p>
+                  <p><a href="#custom">GET MORE INFO</a></p>
+               </div>
+               <div class="col s6 offset-s3 m6 center hide-on-med-and-up">
+                  <img class="responsive-img" src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/brand_illustration.png">
+               </div>
+            </div>
+            <div class="row" id="features-advanced">
+               <div class="col s12 m6">
+                  <h5 class="start text-primarycolor">Advanced</h5>
+                  <p class="start-paragraph-text text-primarycolor">Kiosk Browser has a number of advanced features.</p>
+                  <ul class="start-feature-list">
+                     <li><a href="https://kioskbrowser.userecho.com/topic/878500-barcode-scanning/" target="blank">Barcode Scanner</a></li>
+                     <li><a href="https://kioskbrowser.userecho.com/topic/922670-nfc/" target="_blank">NFC Reader</a></li>
+                     <li>Print pages using <a href="https://kioskbrowser.userecho.com/topic/876321-printing-with-google-cloud-print/" target="_blank">Google Cloud Print</a> or to <a href="https://kioskbrowser.userecho.com/topic/1090348-printing-via-bluetooth/" target="_blank">Bluetooth</a> devices via JavaScript</li>
+                     <li><a href="https://kioskbrowser.userecho.com/topic/1094480-standalone-mode/" target="_blank">Standalone mode</a> (behaves like a normal default browser)</li>
+                     <li>Powerful <a href="https://kioskbrowser.userecho.com/topic/847040-javascript-functions/" target="_blank">JavaScript interface</a></li>
+                     <li><a href="https://kioskbrowser.userecho.com/topics/964-app-drawer/" target="_blank">App Drawer</a> to launch other apps</li>
+                     <li><a href="https://kioskbrowser.userecho.com/topic/1110449-xml-import-export" target="_blank">XML Import &amp; Export</a> for copying settings to multiple devices</li>
+                     <li>70+ settings to control every aspect of Kiosk Browser</li>
+                  </ul>
+               </div>
+               <div class="col s6 offset-s3 m6 center">
+                  <img class="responsive-img" src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/advanced_illustration.png">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section" id="remotemanagement">
+         <div class="container">
+            <div class="row">
+               <div class="col s12 m6 ">
+                  <h5 class="start text-primarycolor">Manage your installations remotely!</h5>
+                  <p>Kiosk Browser Remote is our subscription based remote management console for Kiosk Browser. It provides central management functions for all your devices.</p>
+                  <blockquote>
+                     A subscription costs just £1 GBP / $1.60 USD <strong>per device</strong> <em>per month (volume pricing is available).</em><br>
+                     We offer a free 14 day trial with no obligation to subscribe once the trial ends.
+                  </blockquote>
+                  <p><span class="text-primarycolor" style="font-weight:500;">PRO</span> features are included in the subscription.</p>
+                  <div class="center">
+                     <a href="//fast.wistia.net/embed/iframe/nkenpfnzd4?popover=true" class="wistia-popover[height=433,playerColor=7b796a,width=800]waves-effect waves-light btn light-blue darken-3" style="margin-bottom:10px;"><i class="mdi mdi-youtube-play left"></i>Watch Video</a>
+                     <!--<a class="waves-effect waves-light btn" href="https://www.kbremote.net/Home/Start" style="margin-bottom:10px;">Free Trial</a>-->
+                     <a class="waves-effect waves-light btn" href="https://www.kbremote.net/Home/Start" style="margin-bottom:10px;">More Info &amp; Free Trial...</a>
+                     <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
+                  </div>
+                  <!--<span style="font-size:0.7rem;">*Subscriptions are re-billed every 30 days and you will be charged for the amount of devices registered to your account. Annual subscriptions require an upfront payment.</span>-->
+               </div>
+               <div class="col s6 offset-s3 m6 center">
+                  <img class="responsive-img" src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/remote_illustration.png">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section light-green darken-1" id="custom">
+         <div class="container">
+            <div class="row">
+               <div class="col s6 offset-s3 m6 center">
+                  <img class="responsive-img" src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/customise_illustration.png">
+               </div>
+               <div class="col s12 m6">
+                  <h5 class="start white-text">Get Branded Version</h5>
+                  <p class="start-paragraph-text" style="color:rgba(255, 255, 255, .8);">We offer a customisation service whereby we can create a custom version of Kiosk Browser with your logo, application name, default URL and many other default settings.</p>
+                  <ul style="margin-bottom: 16px;padding-left: 16px;color:rgba(255, 255, 255, .8);">
+                     <li style="margin: 14px 0;padding: 0;list-style: initial;font-size:14px;">Customised APK file</li>
+                     <li style="margin: 14px 0;padding: 0;list-style: initial;font-size:14px;">Request a new APK whenever a new version of Kiosk Browser is released</li>
+                     <li style="margin: 14px 0;padding: 0;list-style: initial;font-size:14px;">Fully compatible with our remote management service</li>
+                     <li style="margin: 14px 0;padding: 0;list-style: initial;font-size:14px;">Embed licence keys or remote registration keys</li>
+                     <li style="margin: 14px 0;padding: 0;list-style: initial;font-size:14px;">Embed a local start page for advanced onboarding procedures</li>
+                  </ul>
+                  <p>
+                     <a href="https://kioskbrowser.userecho.com/topics/75-can-i-get-a-branded-version-for-my-company/" target="_blank" class="white-text">FIND OUT MORE</a>
+                     <a href="https://androidkiosk.onfastspring.com/" target="_blank" class="white-text" style="padding-left: 20px;">BUY BRANDED VERSION</a>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section" id="support">
+         <div class="container">
+            <div class="row">
+               <div class="col s12 m6">
+                  <h5 class="start text-primarycolor">Support &amp; Documentation</h5>
+                  <p class="start-paragraph-text">Our first class support is provided through our <a href="https://kioskbrowser.userecho.com/" target="_blank">Support Portal &amp; Knowledge Base</a>.</p>
+                  <ul style="margin-bottom: 16px;padding-left: 16px;">
+                     <li style="margin: 14px 0;padding: 0;list-style: initial;font-size:14px;">
+                        Log private support tickets
+                     </li>
+                     <li style="margin: 14px 0;padding: 0;list-style: initial;font-size:14px;">
+                        Post public feature requests
+                     </li>
+                     <li style="margin: 14px 0;padding: 0;list-style: initial;font-size:14px;">
+                        Speak to us via live chat
+                     </li>
+                     <li class="start-paragraph-text" style="margin: 14px 0;padding: 0;list-style: initial;font-size:14px;">
+                        Browse a wide-array of FAQs, tutorials, articles and code samples
+                     </li>
+                  </ul>
+                  <p class="start-paragraph-text">We live and breathe Android &amp; Kiosk Browser, we are here to help!</p>
+                  <p><a href="https://kioskbrowser.userecho.com/" target="_blank" class="text-primarycolor">VISIT SUPPORT PORTAL</a></p>
+               </div>
+               <div class="col s6 offset-s3 m6 center">
+                  <img class="responsive-img" src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/support_illustration.png">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section light-green darken-1" id="screenshots">
+         <!--<div class="parallax-container">
+            <div class="parallax"><img src="" style="display: block; transform: translate3d(-50%, 36px, 0px);"></div>
+            </div> -->
+         <div class="container">
+            <h5 class="start white-text">Screenshots</h5>
+            <div class="row">
+               <div class="col s12 m6">
+                  <div>
+                     <div class="material-placeholder"><img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/screenshots/1.png" class="responsive-img materialboxed z-depth-2 initialized"></div>
+                  </div>
+               </div>
+               <div class="col s12 m6">
+                  <div class="row">
+                     <div class="col s12 m6">
+                        <div>
+                           <div class="material-placeholder"><img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/screenshots/2.png" class="responsive-img materialboxed z-depth-2 initialized"></div>
+                        </div>
+                     </div>
+                     <div class="col s12 m6">
+                        <div>
+                           <div class="material-placeholder"><img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/screenshots/3.png" class="responsive-img materialboxed z-depth-2 initialized"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col s12 m6">
+                        <div>
+                           <div class="material-placeholder"><img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/screenshots/4.png" class="responsive-img materialboxed z-depth-2 initialized"></div>
+                        </div>
+                     </div>
+                     <div class="col s12 m6">
+                        <div>
+                           <div class="material-placeholder"><img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/screenshots/5.png" class="responsive-img materialboxed z-depth-2 initialized"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s12">
+                  <div class="center">
+                     <a class="waves-effect waves-light btn white text-primarycolor modal-trigger" style="margin-right:10px;margin-bottom: 5px;" href="#modalBuy" onclick="buySingle()"><i class="mdi mdi-credit-card left"></i>Buy Pro</a>
+                     <!--<a class="waves-effect waves-light btn white text-primarycolor" style="margin-right:10px;margin-bottom: 5px;" href="http://sites.fastspring.com/androidkiosk/product/kioskbrowserpro"><i class="mdi mdi-credit-card left" ></i>Buy Pro</a>-->
+                     <a class="waves-effect waves-light btn white text-primarycolor" href="https://www.kbremote.net/Home/Start" style="margin-bottom: 5px;"><i class="mdi mdi-television-guide left" style="margin-right:10px;margin-bottom: 5px;"></i>Remote Manage Trial</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section white">
+         <div class="container">
+            <h5 class="start text-primarycolor">Some of our clients</h5>
+            <div class="row">
+               <div class="col s6 m4 l2">
+                  <div class="valign-wrapper" style="padding: 10px;">
+                     <a href="http://www.honda-eu.com" target="_blank" class="waves-effect waves-block waves-light valign center" style="width:100%;"><img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/customers/honda.png" class="responsive-img"></a>
+                  </div>
+               </div>
+               <div class="col s6 m4 l2">
+                  <div class="valign-wrapper" style="padding: 10px;">
+                     <a href="http://www.vodafone.qa" target="_blank" class="waves-effect waves-block waves-light valign center" style="width:100%;"><img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/customers/vodafone.jpg" class="responsive-img"></a>
+                  </div>
+               </div>
+               <div class="col s6 m4 l2">
+                  <div class="valign-wrapper" style="padding: 10px;">
+                     <a href="http://www.mazda.com.au" target="_blank" class="waves-effect waves-block waves-light valign center" style="width:100%;"><img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/customers/mazda.png" class="responsive-img"></a>
+                  </div>
+               </div>
+               <div class="col s6 m4 l2">
+                  <div class="valign-wrapper" style="padding: 10px;">
+                     <a href="http://www.mg.co.uk" target="_blank" class="waves-effect waves-block waves-light valign center" style="width:100%;"><img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/customers/mg.png" class="responsive-img"></a>
+                  </div>
+               </div>
+               <div class="col s6 m4 l2">
+                  <div class="valign-wrapper" style="padding: 10px;">
+                     <a href="http://www.adidas.com" target="_blank" class="waves-effect waves-block waves-light valign center" style="width:100%;"><img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/customers/adidas.png" class="responsive-img"></a>
+                  </div>
+               </div>
+               <div class="col s6 m4 l2">
+                  <div class="valign-wrapper" style="padding: 10px;">
+                     <a href="http://www.colostate.edu" target="_blank" class="waves-effect waves-block waves-light valign center" style="width:100%;"><img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/customers/coloradostate.png" class="responsive-img"></a>
+                  </div>
+               </div>
+               <div class="col s6 offset-m2 m4 offset-l4 l2">
+                  <div class="valign-wrapper" style="padding: 10px;">
+                     <a href="http://www.mountvernon.org" target="_blank" class="waves-effect waves-block waves-light valign center" style="width:100%;"><img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/customers/mountvernon.png" class="responsive-img"></a>
+                  </div>
+               </div>
+               <div class="col s6 m4 l2">
+                  <div class="valign-wrapper" style="padding: 10px;">
+                     <a href="http://www.uva.fi" target="_blank" class="waves-effect waves-block waves-light valign center" style="width:100%;"><img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/customers/university-of-vaasa.png" class="responsive-img"></a>
+                  </div>
+               </div>
+               <!--<div class="col s6 m4 l2">
+                  <div class="card-panel valign-wrapper" style="padding: 10px;">
+                  	<a href="http://www.redventures.com" target="_blank" class="waves-effect waves-block waves-light valign center" style="width:100%;"><img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/customers/redventures.png" class="responsive-img"/></a>
+                  </div>
+                  </div>-->
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col s12 m6">
+                  <div class="col s3 m4 l3">
+                     <img width="65" height="65" src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/material_man1.png" class="circle">
+                  </div>
+                  <div class="col s9 m8 l9">
+                     <blockquote>
+                        <p class="grey-text text-darken-3">
+                           <span style="font-weight:500;">When we first</span> started working with this app, it had a pretty steep learning curve. These guys have been working diligently on building their documentation, listening to their customers and adding fixes/additional features; and it has paid off! This app is worth every cent if you are looking to use it commercially like we have. 
+                        </p>
+                        <p style="font-weight:300;">Gunther Vinson, TowMate LLC</p>
+                        <div class="divider"></div>
+                     </blockquote>
+                  </div>
+               </div>
+               <div class="col s12 m6">
+                  <div class="col s3 m4 l3">
+                     <img width="65" height="65" src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/material_man3.png" class="circle">
+                  </div>
+                  <div class="col s9 m8 l9">
+                     <blockquote>
+                        <p class="grey-text text-darken-3">
+                           <span style="font-weight:500;">Great product - incredible support</span>. We use this product in about 40 locations at our company and it works perfectly all-day, every-day.
+                        </p>
+                        <p style="font-weight:300;">David Higginson</p>
+                        <div class="divider"></div>
+                     </blockquote>
+                  </div>
+               </div>
+               <div class="col s12 m6">
+                  <div class="col s3 m4 l3">
+                     <img width="65" height="65" src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/material_man2.png" class="circle">
+                  </div>
+                  <div class="col s9 m8 l9">
+                     <blockquote>
+                        <p class="grey-text text-darken-3">
+                           <span style="font-weight:500;">Perfect</span>, use it for our tennis court reservation kiosk with a Google Apps Script web app. Works perfectly.
+                        </p>
+                        <p style="font-weight:300;">Serge Gravelle</p>
+                        <div class="divider"></div>
+                     </blockquote>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--<div class="section white" style="margin-top: 0px;">
+         <div class="container">
+         	<div class="row">
+         		<div class="col s12 offset-m1 m10 offset-l2 l8" style="text-align: center;">
+         			<div style="margin-top: 20px;">
+         				<img src="/images/itlogo-circle.png" style="height: 150px;width: 150px;">
+         			</div>
+         			<h5 class="text-primarycolor">About Us</h5>
+         			<p>We are a team of IT Consultants working on various different technology projects. Kiosk Browser was developed for one of our clients, spotting a gap in the market we decided to continue actively developing and selling it.</p>
+         			<p>
+         				<a class="text-primarycolor" href="http://www.proco-it.com" target="_blank" title="ProCo IT Website">
+         					<i class="fa fa-globe fa-2x"></i>
+         				</a>
+         				<a class="text-primarycolor" href="http://plus.google.com/+ProCoIT" title="Google+">
+         					<i class="fa fa-google-plus-square fa-2x"></i>
+         				</a>
+         			</p>
+         		</div>
+         	</div>
+         </div>
+         </div>-->
+      <!--<div class="section" style="min-height:100px;">
+         </div>-->
+      <!--<div class="container" style="margin-top: 25px;">
+         <div class="row">
+         	<div class="col s12">
+         		<div class="card-panel">
+         			<div id="contact-section" class="contact-section">
+         			</div>
+         		</div>
+         	</div>
+           </div>
+         </div>-->
+      <!-- Modal Structure -->
+      <div id="modalBuy" class="modal bottom-sheet" style="max-height:65%;">
+         <a href="#!" class="modal-action modal-close"><i class="mdi mdi-close right grey-text" style="font-size:38px;padding:15px;"></i></a>
+         <div class="modal-content">
+            <h4>Buy</h4>
+            <ul class="collection">
+               <li class="collection-item avatar">
+                  <img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/ic_launcher.png" class="circle" style="border-radius:0%;">
+                  <span class="title">Kiosk Browser Pro</span>
+                  <p style="font-size:14px;">Single Device Licence <br>
+                     Buy Once, free upgrades.<br>
+                     <input type="text" onkeypress="return isNumberKey(event)" class="form-control" data-fsc-item-quantity-value="" data-fsc-item-quantity="" data-fsc-item-path-value="kiosk-browser-pro" data-fsc-autoapply="" data-fsc-action="Update" data-fsc-item-path="kiosk-browser-pro" data-fsc-item-selection-smartdisplay="" style="width: 50px; font-weight: 800; display: none;">
+                     <span style="font-size:10px;" class="grey-text">Discount applied at 250+ (65%) &amp; 500+ (80%) licences</span><br>
+                     <span style="font-size:10px;" class="grey-text">Licensing FAQs can be found <a href="https://kioskbrowser.userecho.com/lists/2-knowledge-base/?category=4" target="_blank">here</a>.</span>
+                  </p>
+                  <!--<p style="font-size:14px;"><strong>Save 10% on your order!</strong> Leave a review on <a href="https://play.google.com/store/apps/details?id=com.procoit.kioskbrowser">Google Play</a> then <a href="mailto:support@android-kiosk.com">contact us</a> for a discount code.</p>-->
+                  <span class="secondary-content" data-fsc-item-path="kiosk-browser-pro" data-fsc-item-price="">$8.00</span>
+                  <a href="#" class="secondary-content" style="margin-top: 20px; display: block;" data-fsc-item-path-value="kiosk-browser-pro" data-fsc-action="Add" data-fsc-item-path="kiosk-browser-pro" data-fsc-item-selection-smartdisplay-inverse=""><strong>Add</strong></a>
+                  <a href="#" class="secondary-content" style="margin-top: 20px; display: none;" data-fsc-item-path-value="kiosk-browser-pro" data-fsc-action="Remove" data-fsc-item-path="kiosk-browser-pro" data-fsc-item-selection-smartdisplay=""><strong>Remove</strong></a>
+                  <a href="#" class="secondary-content" style="margin-top: 40px; display: none;" data-fsc-item-path-value="kiosk-browser-pro" data-fsc-action="Update" data-fsc-item-path="kiosk-browser-pro" data-fsc-item-selection-smartdisplay=""><strong>Update</strong></a>
+               </li>
+               <li class="collection-item avatar" style="min-height:125px;">
+                  <!--<div class="secondary-content" style="margin-top:0px;"><span class="bold">Taxes: </span><span data-fsc-order-taxValue></span></div>-->
+                  <div class="secondary-content" style="margin-top:0px;"><strong>Total (inc taxes): <span data-fsc-order-total="">$0.00</span></strong></div>
+                  <a href="#!" class="secondary-content btn" style="margin-top: 30px; display: none;" data-fsc-item-path-value="kiosk-browser-pro" data-fsc-item-path="kiosk-browser-pro" data-fsc-action="Checkout" data-fsc-item-selection-smartdisplay="">Checkout</a>
+                  <span style="font-size:10px;margin-top: 70px;" class="secondary-content grey-text">Having problems ordering? Try our <a href="https://androidkiosk.onfastspring.com" target="_blank">store</a> instead.</span>
+                  <!--<span style="font-size:10px;margin-top: 90px;" class="secondary-content grey-text">*Once review has been submitted please <a href="mailto:support@android-kiosk.com">contact us</a> for a discount code.</span>-->
+                  <!--<a href="#!" class="secondary-content">Checkout</a>-->
+               </li>
+            </ul>
+         </div>
+      </div>
+      <script>
+         function isNumberKey(evt){
+         	var charCode = (evt.which) ? evt.which : event.keyCode
+         	if (charCode > 31 && (charCode < 48 || charCode > 57))
+         		return false;
+         	return true;
+         }
+         
+         function onPopupClose(object) {
+         	if (object != null) {
+         		//toast message and close modal
+         		$('#modalBuy').closeModal();
+         		Materialize.toast('Order complete!', 4000);
+         	}
+         }
+         
+         function buySingle() {
+         	var s = {
+         		'reset': true, // reset the cart and session (will remove everything added to the cart or passed to the session prior to this)
+         		'products' : [
+         						{
+         							'path':'kiosk-browser-pro',
+         							'quantity': 1 // add product "kiosk-browser-pro" to the cart with quantity "1".
+         						}
+         		]
+         	}
+         	fastspring.builder.push(s); // call Library "Push" method to apply the Session Object. 
+         }
+      </script>
+   </main>
+   <footer class="page-footer" style="margin-top:0px;padding-left:0px;" id="contact">
+      <div class="container">
+         <div class="row">
+            <div class="col l6 s12">
+               <h5 class="white-text">Get in touch</h5>
+               <div id="ue-embedded-widget"></div>
+               <form class="col s12" action="contact.php" method="post" id="contactForm">
+                  <div class="row">
+                     <div class="input-field col s6">
+                        <i class="mdi mdi-account-circle prefix white-text"></i>
+                        <input id="name" name="name" type="text" class="validate white-text">
+                        <label for="name" class="white-text">Name</label>
+                     </div>
+                     <div class="input-field col s6">
+                        <i class="mdi mdi-email prefix white-text"></i>
+                        <input id="email" name="email" type="email" class="validate white-text">
+                        <label for="email" class="white-text">Email</label>
+                     </div>
+                     <div class="input-field col s12">
+                        <i class="mdi mdi-pencil prefix white-text"></i>
+                        <textarea id="message" name="message" class="materialize-textarea white-text" style="padding-bottom: 0px;"></textarea>
+                        <grammarly-btn>
+                           <div style="visibility: hidden; z-index: 2;" class="_e725ae-textarea_btn _e725ae-anonymous _e725ae-not_focused" data-grammarly-reactid=".0">
+                              <div class="_e725ae-transform_wrap" data-grammarly-reactid=".0.0">
+                                 <div title="Protected by Grammarly" class="_e725ae-status" data-grammarly-reactid=".0.0.0">&nbsp;</div>
+                              </div>
+                              <span class="_e725ae-btn_text" data-grammarly-reactid=".0.1">Not signed in</span>
+                           </div>
+                        </grammarly-btn>
+                        <label for="message" class="white-text">Message</label>
+                     </div>
+                     <div class="input-field col s12 offset-m6 m6 l12">
+                        <img src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/captcha.php" class="right" width="45px" style="margin-top:-20px;">
+                        <i class="mdi mdi-pencil prefix white-text"></i>
+                        <input type="text" name="captcha" id="captcha" maxlength="6" size="6" class="validate white-text">
+                        <label for="captcha" class="white-text">Image Verification</label>
+                     </div>
+                     <div class="col offset-s7 s5">
+                        <button class="btn waves-effect waves-light white light-green-text text-darken-2 right" type="submit" onclick="goog_report_conversion('https://www.android-kiosk.com')">Send
+                        <i class="mdi mdi-send right text-darken-2"></i>
+                        </button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <div class="col offset-l2 l4 s12" style="text-align: right;">
+               <h5 class="white-text">Contact</h5>
+               <ul>
+                  <li><span class="white-text">ProCo IT<br>Unit 3 Castle Road, Chelston Business Park, Wellington, Somerset, TA21 9JQ, UK</span></li>
+                  <li><a href="mailto:%73%75pp%6F%72t@android%2Dkios%6B.com" class="white-text">support@android-kiosk.com</a></li>
+                  <li><span class="white-text" style="">Tel: +44 (0)844 884 2910</span></li>
+                  <li><a href="https://play.google.com/store/apps/details?id=com.procoit.kioskbrowser"><img alt="Get it on Google Play" src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/images/google-play-badge.png" width="128"></a></li>
+                  <li><a href="mailto:%73%75pp%6F%72t@android%2Dkios%6B.com" class="white-text"><i class="small mdi mdi-email right" style="color:white;margin-top:10px;"></i></a><a href="http://www.youtube.com/channel/UCIRzVcBrPTMfCDYQfZJhm6A" target="_blank"><i class="small mdi mdi-youtube-play right" style="color:white; margin-top:10px"></i></a><a href="http://plus.google.com/+ProCoIT" target="_blank"><i class="small mdi mdi-google-plus right" style="color:white;margin-top:10px;"></i></a><a href="https://twitter.com/kiosk_browser" target="_blank"><i class="small mdi mdi-twitter right" style="color:white;margin-top:10px;"></i></a></li>
+               </ul>
+               <span class="white-text right" style="font-size:0.7em;clear:both;">Android, Google Play and the Google Play logo are trademarks of Google Inc.</span>
+            </div>
+         </div>
+      </div>
+      <div class="footer-copyright">
+         <div class="container">
+            <span class="white-text">© 2016 <a href="http://www.proco-it.com" class="white-text" target="_blank">ProCo IT</a></span>
+            <!--<a class="white-text right" href="http://www.android-kiosk.com/privacy-and-cookie-policy/">Privacy &amp; Cookies Policy</a>-->
+            <a href="//www.iubenda.com/privacy-policy/7904956" class="iubenda-nostyle no-brand iubenda-embed white-text right" title="Privacy Policy">Privacy &amp; Cookies Policy</a><script type="text/javascript" src="//cdn.iubenda.com/iubenda_i_badge.js"></script>
+         </div>
+      </div>
+   </footer>
+   <!--Start of Tawk.to Script-->
+   <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/560a96e19ed000e01e924b8a/1a0cltucd';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+   </script>
+   <!--End of Tawk.to Script--><script type="text/javascript">
+      /* <![CDATA[ */
+      var cnArgs = {"ajaxurl":"https:\/\/www.android-kiosk.com\/wp-admin\/admin-ajax.php","hideEffect":"none","onScroll":"yes","onScrollOffset":"100","cookieName":"cookie_notice_accepted","cookieValue":"TRUE","cookieTime":"31536000","cookiePath":"\/","cookieDomain":""};
+      /* ]]> */
+   </script>
+   <script type="text/javascript" src="https://www.android-kiosk.com/wp-content/plugins/cookie-notice/js/front.js?ver=1.2.38"></script>
+   <script type="text/javascript" src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/js/materialize.min.js?ver=1.0.0"></script>
+   <script type="text/javascript" src="https://www.android-kiosk.com/wp-content/themes/androidkioskcom/js/init.js?ver=1.0.0"></script>
+   <script type="text/javascript" src="https://www.android-kiosk.com/wp-includes/js/wp-embed.min.js?ver=4.6.1"></script>
+   <script type="text/javascript">
+      /* <![CDATA[ */
+      goog_snippet_vars = function() {
+      var w = window;
+      w.google_conversion_id = 960520053;
+      w.google_conversion_label = "31x5CNTb1m8Q9b6BygM";
+      w.google_remarketing_only = false;
+      }
+      // DO NOT CHANGE THE CODE BELOW.
+      goog_report_conversion = function(url) {
+      goog_snippet_vars();
+      window.google_conversion_format = "3";
+      var opt = new Object();
+      opt.onload_callback = function() {
+      if (typeof(url) != 'undefined') {
+       window.location = url;
+      }
+      }
+      var conv_handler = window['google_trackConversion'];
+      if (typeof(conv_handler) == 'function') {
+      conv_handler(opt);
+      }
+      }
+      /* ]]> */
+   </script>
+   <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js"></script>	
+   <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+   <div class="hiddendiv common"></div>
+   <div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+   <link rel="stylesheet" id="wistia_popover_css" href="https://fast.wistia.net/assets/stylesheets/jquery.fancybox.css?t=20160821">
+   <iframe src="about:blank" style="display: none !important;"></iframe>
+   <div id="PhcJnxw-1490849887699" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; position: fixed !important; border: 0px !important; min-height: 0px !important; min-width: 0px !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: auto !important; height: auto !important; z-index: 2000000000 !important; cursor: auto !important; float: none !important; bottom: 0px !important; left: 0px !important; right: auto !important; display: block;">
+      <iframe id="M7LZPfz-1490849887700" src="about:blank" frameborder="0" scrolling="no" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: auto !important; bottom: auto !important; left: auto !important; position: static !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 320px !important; height: 400px !important; z-index: 999999 !important; cursor: auto !important; float: none !important; display: none !important;"></iframe><iframe id="LxD9ZOe-1490849887701" src="about:blank" frameborder="0" scrolling="no" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; transition-property: none !important; z-index: 1000001 !important; cursor: auto !important; float: none !important; height: 40px !important; min-height: 40px !important; max-height: 40px !important; width: 150px !important; min-width: 150px !important; max-width: 150px !important; transform: rotate(0deg) translateZ(0px) !important; transform-origin: 0px center 0px !important; margin: 0px !important; top: auto !important; bottom: 0px !important; left: 10px !important; right: auto !important; display: block !important;"></iframe><iframe id="NRVhmKy-1490849887701" src="about:blank" frameborder="0" scrolling="no" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; display: none !important; z-index: 1000003 !important; cursor: auto !important; float: none !important; top: auto !important; bottom: 40px !important; left: 10px !important; right: auto !important; width: 150px !important; max-width: 150px !important; min-width: 150px !important; height: 37px !important; max-height: 37px !important; min-height: 37px !important;"></iframe>
+      <div id="zu2XSyZ-1490849887698" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none rgb(255, 255, 255) !important; opacity: 0 !important; top: 1px !important; bottom: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: auto !important; height: 45px !important; display: block !important; z-index: 999997 !important; cursor: move !important; float: none !important; left: 0px !important; right: 96px !important;"></div>
+      <div id="S94qkQF-1490849887699" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 96px !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: w-resize !important; float: none !important;"></div>
+      <div id="dxxucEf-1490849887699" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: e-resize !important; float: none !important;"></div>
+      <div id="k5W24UT-1490849887699" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: n-resize !important; float: none !important;"></div>
+      <div id="ISWgp8Y-1490849887699" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: 0px !important; bottom: 0px !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: s-resize !important; float: none !important;"></div>
+      <div id="da6D3T6-1490849887699" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: nw-resize !important; float: none !important;"></div>
+      <div id="U1WNmGU-1490849887699" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: ne-resize !important; float: none !important;"></div>
+      <div id="e7nr4t7-1490849887699" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: auto !important; bottom: 0px !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: sw-resize !important; float: none !important;"></div>
+      <div id="zzBvnEV-1490849887699" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: 0px !important; bottom: 0px !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999999 !important; cursor: se-resize !important; float: none !important;"></div>
+      <div class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 100% !important; display: none !important; z-index: 1000001 !important; cursor: move !important; float: left !important;"></div>
+   </div>
+   <iframe src="about:blank" style="display: none !important;"></iframe>
+</body>
+
+
+
+</html>
+          
