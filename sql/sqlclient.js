@@ -3,7 +3,7 @@ var db = require('./db');
 
 var sqlClient = {};
 
-var SELECT_ALL_EVENTS = "SELECT ins.*, e.* FROM instructor ins, events e WHERE ins.id = e.instructor_id ORDER BY e.id ASC;";  
+var SELECT_ALL_EVENTS = "SELECT ins.*, e.* FROM instructor ins, events e WHERE ins.id = e.instructor_id AND e.time_start >= CURDATE() ORDER BY e.id ASC;";  
 var SELECT_ALL_RSVP_4_EVENT = "SELECT r.* FROM rsvp r WHERE r.event_id = ?;";
 var SELECT_EVENT_RSVP = "SELECT count(*) as count FROM rsvp WHERE event_id = ? AND email = ?;";
 var INSERT_RSVP = "INSERT INTO rsvp (event_id, email) VALUES (?,?);"

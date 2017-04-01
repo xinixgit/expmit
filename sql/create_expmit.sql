@@ -37,7 +37,7 @@ CREATE TABLE rsvp (
 CREATE INDEX rsvp_email on rsvp(email);
 
 /* TEST DATA */
-INSERT INTO instructor (name, intro, email) VALUES ('John Smith', 'Me, myself and I', 'instruct_email@hotmail.com');
-INSERT INTO events (instructor_id, title, pic_url, price, description, location, time_start, time_end) VALUES (1, 'A trip to faraway', '/farawaypic.jpg', 30.75,'Lets go somewhere far away', 'There', CURDATE(), DATE(DATE_ADD(CURDATE(), INTERVAL 4 DAY)));
-INSERT INTO events (instructor_id, title, pic_url, price, description, location, time_start, time_end) VALUES (1, 'A trip to nearby', '/nearbypic.jpg', 192.0,'Lets go somewhere nearby', 'Here', CURDATE(), DATE(DATE_ADD(CURDATE(), INTERVAL 1 DAY)));
-INSERT INTO rsvp (event_id, email) VALUES (2, 'hello_kitty@gmail.com'), (2, 'hello_moto@gmail.com');
+INSERT INTO instructor (name, intro, email) VALUES ('Xinxin Dai', 'Avid skier', 'igotemail10@gmail.com');
+INSERT INTO events (instructor_id, title, pic_url, price, description, location, time_start, time_end) VALUES (1, 'Expired Event', '/event1.jpg', 90.00,'Im expired, you should not see me', 'Sunnyvale, CA', DATE(DATE_SUB(CURDATE(), INTERVAL 4 DAY)), DATE(DATE_SUB(CURDATE(), INTERVAL 2 DAY)));
+INSERT INTO events (instructor_id, title, pic_url, price, description, location, time_start, time_end) VALUES (1, 'One day Northstar ski trip', '/images/events/event1.jpg', 90.00,'Private lesson for a day in Northstar, instructor will ski with students throughout the day. Unforgettable one day experience for ski or snowboard beginners', 'Sunnyvale, CA', CURDATE(), DATE(DATE_ADD(CURDATE(), INTERVAL 4 DAY)));
+INSERT INTO rsvp (event_id, email) VALUES (1, 'hello_kitty@gmail.com'), (1, 'hello_moto@gmail.com');
