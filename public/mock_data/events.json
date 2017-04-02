@@ -1,30 +1,48 @@
 [
 	{
 		"id": 1,
-		"name": "John Smith",
-		"intro": "Me, myself and I",
-		"email": "instruct_email@hotmail.com",
+		"name": "Xinxin Dai",
+		"intro": "Avid skier",
+		"email": "igotemail10@gmail.com",
 		"instructor_id": 1,
-		"title": "A trip to faraway",
-		"pic_url": "/farawaypic.jpg",
-		"price": 30.75,
-		"description": "Lets go somewhere far away",
-		"location": "There",
-		"time_start": "2017-03-29T07:00:00.000Z",
-		"time_end": "2017-04-02T07:00:00.000Z"
+		"title": "Title Test",
+		"pic_url": "/images/events/event1.jpg",
+		"price": 90,
+		"description": "Desc test",
+		"location": "SF, CA",
+		"dates": [
+			{
+				"id": 1,
+				"event_id": 1,
+				"time_start": "2017-04-01T07:00:00.000Z",
+				"time_end": "2017-04-02T07:00:00.000Z"
+			}
+		]
 	},
 	{
 		"id": 2,
-		"name": "John Smith",
-		"intro": "Me, myself and I",
-		"email": "instruct_email@hotmail.com",
+		"name": "Xinxin Dai",
+		"intro": "Avid skier",
+		"email": "igotemail10@gmail.com",
 		"instructor_id": 1,
-		"title": "A trip to nearby",
-		"pic_url": "/nearbypic.jpg",
-		"price": 192,
-		"description": "Lets go somewhere nearby",
-		"location": "Here",
-		"time_start": "2017-03-29T07:00:00.000Z",
-		"time_end": "2017-03-30T07:00:00.000Z"
+		"title": "Title Test 2",
+		"pic_url": "/images/events/event2.jpg",
+		"price": 90,
+		"description": "Desc 2 test",
+		"location": "Sunnyvale, CA",
+		"dates": [
+			{
+				"id": 3,
+				"event_id": 2,
+				"time_start": "2017-04-01T07:00:00.000Z",
+				"time_end": "2017-04-02T07:00:00.000Z"
+			},
+			{
+				"id": 4,
+				"event_id": 2,
+				"time_start": "2017-04-02T07:00:00.000Z",
+				"time_end": "2017-04-03T07:00:00.000Z"
+			}
+		]
 	}
 ]
