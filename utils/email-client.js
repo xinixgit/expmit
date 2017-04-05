@@ -25,13 +25,13 @@ emailClient.send = function(to, event_title, event_id) {
     var mailOptions = {
         from: svrConf.email.user,
         to: to,
-        subject: 'You have reserved a spot in this event!',
+        subject: 'You have made a reservation in expmit',
         text: '',   // plaintext body
-        html: '<h5>Congratulations!</h5> <p>You have successfully reserved a spot in <a href=' + elink + '>' + event_title + '</a>'
+        html: '<h3>Congratulations!</h3> <p>You have successfully reserved a spot in <a href="' + elink + '">' + event_title + '</a>'
     };
 
-    transporter.sendMail(mailOptions, function(error, info){
-        if(error){
+    transporter.sendMail(mailOptions, function(err, info){
+        if(err){
             throw err;
         }
         console.log('Message sent: ' + info.response);

@@ -3,6 +3,6 @@ module.exports = {
 	email: {
 		service: 'gmail',
 		user: 'igotemail4@gmail.com',
-		password: 'gannilaomu'
+		password: 'fgfrewldpzmuxelq'
 	}
 }

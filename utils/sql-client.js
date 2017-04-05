@@ -3,15 +3,26 @@ var db = require('./db');
 
 var sqlClient = {};
 
+var SELECT_EVENT_BY_ID = 'SELECT * FROM event WHERE id = ?;';
 var SELECT_AVL_DATES = 'SELECT * FROM event_date WHERE time_start >= CURDATE() ORDER BY event_id ASC;';
 var SELECT_EVENTS = 'SELECT ins.*, e.* FROM instructor ins, event e WHERE ins.id = e.instructor_id AND e.id IN (?);';
 var SELECT_ALL_RSVP_4_EVENT = "SELECT r.* FROM rsvp r WHERE r.event_id = ?";
 var SELECT_EVENT_RSVP = "SELECT count(*) as count FROM rsvp WHERE event_id = ? AND event_date_id = ? AND email = ?;";
 var INSERT_RSVP = "INSERT INTO rsvp (event_id, event_date_id, email) VALUES (?,?,?);"
 
+sqlClient.getEvent = function(event_id) {
+	return db.get(mysql.format(SELECT_EVENT_BY_ID, [event_id]));
+};
+
 sqlClient.getAllEvents = function() {		
 	var map = {};
-	return db.get(SELECT_AVL_DATES).then(function(rows){				
+	return db.get(SELECT_AVL_DATES).then(function(rows){
+		if (!rows || rows.length == 0) {
+			console.error('No available events found.');
+			// Call resolve with an empty array ([])
+			return new Promise((resolve) => resolve([]));
+		}
+
 		for (var i = 0; i < rows.length; i++) {
 			var row = rows[i];
 			if (!map[row.event_id]) {
